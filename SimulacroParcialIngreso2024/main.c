@@ -15,6 +15,7 @@
  * quiera ver estadísticas antes de cargar notas.
  * Considere que el usuario podría querer
  * cargar mas notas sobre las que ya tiene o desecharlas para cargar nuevas.
+ * No olvide validar las notas entre el 1 y el 10.
  *
  * NOTA: para la posibilidad de desechar los valores de la Pila,
  * se agregó una función borrarPila()
