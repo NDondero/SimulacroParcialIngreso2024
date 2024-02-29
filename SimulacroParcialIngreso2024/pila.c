@@ -46,7 +46,7 @@ void mostrar(Pila* p) {
     printf("\n\nBase .............................................. Tope\n\n");
 }
 
-void borrarPila(Pila* p) {
+void vaciarPila(Pila* p) {
     free(p->valores);
     inicpila(p);
 }

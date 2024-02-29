@@ -18,10 +18,10 @@
  * No olvide validar las notas entre el 1 y el 10.
  *
  * NOTA: para la posibilidad de desechar los valores de la Pila,
- * se agregó una función borrarPila()
+ * se agregó una función vaciarPila()
  * como todas las demás funciones recibe la pila por parámetro
  * con el operador ampersand
- * ej: borrarPila(&miPila);
+ * ej: vaciarPila(&miPila);
  */
 
 int main() {

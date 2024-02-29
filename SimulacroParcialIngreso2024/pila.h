@@ -13,4 +13,4 @@ int tope(Pila* p);
 int pilavacia(Pila* p);
 void leer (Pila* p);
 void mostrar(Pila* p);
-void borrarPila(Pila* p);
+void vaciarPila(Pila* p);
