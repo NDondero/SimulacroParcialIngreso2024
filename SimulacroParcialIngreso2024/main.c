@@ -31,7 +31,9 @@ int main() {
 
     const int notaMinimaLimite = 1;
     const int notaMaximaLimite = 10;
-    int opcion, nota, notaMaxima, notaMinima, sumatorioNotas = 0, cantidadNotas = 0;
+    int opcion, nota, notaMaxima, notaMinima;
+    int sumatorioNotas = 0, cantidadNotas = 0;
+    int cantidadNotasPares = 0, cantidadNotasImpares = 0;
     float promedio;
     char seguir;
 
@@ -84,6 +86,11 @@ int main() {
                     if (topeActual < notaMinima) {
                         notaMinima = topeActual;
                     }
+                    if (topeActual % 2 == 0) {
+                        cantidadNotasPares++;
+                    } else {
+                        cantidadNotasImpares++;
+                    }
                     sumatorioNotas += topeActual;
                     cantidadNotas++;
                     apilar(&aux, desapilar(&notas));
@@ -98,6 +105,7 @@ int main() {
                     printf("\tSe han cargado %i notas\n\n", cantidadNotas);
                 }
                 printf("\tLa nota mas alta es %i\n\n\tLa nota mas baja es %i\n\n\tEl promedio general es %.2f\n\n", notaMaxima, notaMinima, promedio);
+                printf("\tDe todas las notas %i son pares y %i son impares\n\n", cantidadNotasPares, cantidadNotasImpares);
             } else {
                 printf("\tNo tiene notas cargadas, cargue notas.\n\n");
             }
